@@ -64,12 +64,20 @@ sudo apt update
 ```
 sudo apt upgrade
 ```
+
+<img width="1249" height="532" alt="image" src="https://github.com/user-attachments/assets/b4ffbade-b287-41f7-8d02-962ea2518f7a" />
+
 **🔐 Add Certificates**
 ```
 sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
 curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 ```
+
+<img width="1321" height="726" alt="image" src="https://github.com/user-attachments/assets/71907adf-1614-4679-a58b-e6e303c3a525" />
+
 **📦 Install Node.js**
 ```
 sudo apt install -y nodejs
 ```
+
+<img width="1321" height="726" alt="image" src="https://github.com/user-attachments/assets/3af80270-2a60-4ddc-b375-ace885525078" />
