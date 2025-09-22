@@ -37,8 +37,8 @@
 - Executes server-side JavaScript code  
 - Manages requests and responses between client and server
 
-#### Step 0 - Preparing prerequisites
+#### ⚙️ Step 0 - Preparing prerequisites
 
-> In order to complete this project, you will need an `**AWS account**` and a **virtual server with Ubuntu Server OS**.
+> In order to complete this project, you will need an **AWS account** and a **virtual server with Ubuntu Server OS**.
 
 > In previous projects, we used different tools to connect to an EC2 instance. However, if you don’t want to install or launch anything outside of AWS, you can open your CLI straight from the AWS Web Console, like this:
