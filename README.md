@@ -36,6 +36,7 @@
 
 - Executes server-side JavaScript code  
 - Manages requests and responses between client and server
+---
 
 #### ⚙️ Step 0 - Preparing prerequisites
 
