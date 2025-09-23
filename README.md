@@ -259,6 +259,9 @@ mkdir models && cd models
 ```
 vi book.js
 ```
+
+<img width="1326" height="352" alt="image" src="https://github.com/user-attachments/assets/5ddbbba3-60ab-46c7-9aef-3b0e35aa38f1" />
+
 - Write the code below into `book.js`
 ```
 const mongoose = require('mongoose');
