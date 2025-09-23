@@ -36,6 +36,7 @@
 
 - Executes server-side JavaScript code  
 - Manages requests and responses between client and server
+
 ---
 
 #### ❄️ Step 0 - Preparing prerequisites
@@ -46,6 +47,7 @@
 
 **Task**
 > You are going to implement a simple Book Register web form using MEAN Stack.
+
 ---
 
 #### 🏗️ Step 1: Install Node.js
@@ -81,6 +83,7 @@ sudo apt install -y nodejs
 ```
 
 <img width="1321" height="726" alt="image" src="https://github.com/user-attachments/assets/3af80270-2a60-4ddc-b375-ace885525078" />
+
 ---
 
 #### 🏗️ Step 2: Install MongoDB
@@ -179,6 +182,7 @@ app.listen(PORT, () => {
   console.log(`Server up: http://localhost:${PORT}`);
 });
 ```
+
 ---
 
 **🏗️ Step 3: Install Express and set up routes to the server**
