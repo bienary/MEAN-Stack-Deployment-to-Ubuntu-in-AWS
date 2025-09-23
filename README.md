@@ -427,11 +427,27 @@ cd ..
 node server.js
 ```
 
+<img width="1317" height="204" alt="image" src="https://github.com/user-attachments/assets/dbd1c676-8657-4b87-88a0-dfeb6560eb4a" />
+
 - The server is now up and running, we can connect it via port 3300.
 ```
 curl -s http://localhost:3300
 ```
+
+<img width="1296" height="646" alt="image" src="https://github.com/user-attachments/assets/d069e65a-1ab7-4847-a1ce-e509ae49c443" />
+
 - It shall return an HTML page, it is hardly readable in the CLI, but we can also try and access it from the Internet.
 - For this - you need to open TCP port 3300 in your AWS Web Console for your EC2 Instance.
 
 🔐 Your Security group shall look like this:
+<img width="1297" height="594" alt="image" src="https://github.com/user-attachments/assets/bcd8cd47-00fb-4533-80cd-866eccfccffe" />
+
+<img width="1312" height="687" alt="image" src="https://github.com/user-attachments/assets/6a4cecc3-fecd-4bb3-bddf-64cb5efa5529" />
+
+
+<img width="1312" height="687" alt="image" src="https://github.com/user-attachments/assets/f42c4f5a-4f30-43d9-aaa4-f81af6a035f1" />
+
+---
+
+#### 🎯 Conclution:
+Wrapping up the MEAN Stack project means you’ve got hands-on with some seriously powerful tech—MongoDB, Express, Angular, and Node.js—all working together to bring your app to life. You’ve learned how to manage data, set up smooth backend routes, and build interactive frontends that talk to the server.
