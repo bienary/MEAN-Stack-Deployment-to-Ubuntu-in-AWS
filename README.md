@@ -451,3 +451,4 @@ curl -s http://localhost:3300
 
 #### 🎯 Conclution:
 Wrapping up the MEAN Stack project means you’ve got hands-on with some seriously powerful tech—MongoDB, Express, Angular, and Node.js—all working together to bring your app to life. You’ve learned how to manage data, set up smooth backend routes, and build interactive frontends that talk to the server.
+---
