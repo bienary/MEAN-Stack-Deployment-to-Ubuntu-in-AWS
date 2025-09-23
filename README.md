@@ -102,6 +102,9 @@ curl -fsSL https://www.mongodb.org/static/pgp/server-7.0.asc | \
 echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | \
   sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
 ```
+
+<img width="1323" height="410" alt="image" src="https://github.com/user-attachments/assets/1751672d-02e5-4824-b97b-fa60ed682f0d" />
+
 **📦 Install MongoDB**
 
 ```
@@ -109,15 +112,19 @@ sudo apt-get update
 sudo apt-get install -y mongodb-org
 ```
 
+<img width="1323" height="410" alt="image" src="https://github.com/user-attachments/assets/3e8c27ac-de63-4475-94fe-02691ff9a0a4" />
+
 **🛸 Start The Server**
 ```
-sudo service mongodb start
+sudo systemctl start mongod
 ```
 
 **✅ Verify the Service is Running**
 ```
-sudo systemctl status mongodb
+sudo systemctl status mongod
 ```
+
+<img width="1323" height="410" alt="image" src="https://github.com/user-attachments/assets/c5a9ae64-93a3-4c95-8229-0919e5a0a8a7" />
 
 **📦Install [npm](https://www.npmjs.com) - Node package manager**
 ```
@@ -128,6 +135,8 @@ sudo apt install -y npm
 ```
 sudo npm install body-parser
 ```
+<img width="1323" height="279" alt="image" src="https://github.com/user-attachments/assets/f68ded05-2398-40ba-a39e-b437677f4833" />
+
 **📁Create a folder named `Books`**
 ```
 mkdir Books && cd Books
@@ -136,6 +145,9 @@ mkdir Books && cd Books
 ```
 npm init
 ```
+
+<img width="1321" height="726" alt="image" src="https://github.com/user-attachments/assets/1b7a0485-6741-4545-be13-f1e0f74ec1eb" />
+
 - Add a file named `server.js`
 ```
 vi server.js
