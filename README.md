@@ -81,3 +81,90 @@ sudo apt install -y nodejs
 ```
 
 <img width="1321" height="726" alt="image" src="https://github.com/user-attachments/assets/3af80270-2a60-4ddc-b375-ace885525078" />
+---
+
+#### 🏗️ Step 2: Install MongoDB
+
+- MongoDB stores data in flexible, `JSON-like` documents.  
+
+
+**📥 Import MongoDB GPG Key**
+
+```
+sudo apt-get install -y gnupg curl
+curl -fsSL https://www.mongodb.org/static/pgp/server-7.0.asc | \
+  sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg \
+  --dearmor
+```
+**➕ Add MongoDB Repository**
+
+```
+echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | \
+  sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
+```
+**📦 Install MongoDB**
+
+```
+sudo apt-get update
+sudo apt-get install -y mongodb-org
+```
+
+**🛸 Start The Server**
+```
+sudo service mongodb start
+```
+
+**✅ Verify the Service is Running**
+```
+sudo systemctl status mongodb
+```
+
+**📦Install [npm](https://www.npmjs.com) - Node package manager**
+```
+sudo apt install -y npm
+```
+- Install `body-parser` package
+> This package helps us process JSON files passed in requests to the server.
+```
+sudo npm install body-parser
+```
+**📁Create a folder named `Books`**
+```
+mkdir Books && cd Books
+```
+- Initialize the npm project
+```
+npm init
+```
+- Add a file named `server.js`
+```
+vi server.js
+```
+- Write the following server code into `server.js`:
+```
+const express = require('express');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+const path = require('path');
+
+const app = express();
+const PORT = process.env.PORT || 3300;
+
+// MongoDB connection
+mongoose.connect('mongodb://localhost:27017/test', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+.then(() => console.log('MongoDB connected'))
+.catch(err => console.error('MongoDB connection error:', err));
+
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(bodyParser.json());
+
+require('./apps/routes')(app);
+
+app.listen(PORT, () => {
+  console.log(`Server up: http://localhost:${PORT}`);
+});
+```
+
